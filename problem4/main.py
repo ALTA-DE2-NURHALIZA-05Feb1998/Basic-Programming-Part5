@@ -1,5 +1,9 @@
 def muncul_sekali(angka):
-    return []
+    list_angka = []
+    for i in angka:
+        if angka.count(i) == 1 and i not in list_angka:
+            list_angka.append(int(i))
+    return list_angka
 
 if __name__ == '__main__':
     print(muncul_sekali("1234123")) # [4]

@@ -1,6 +1,7 @@
 def join_array_remove_duplicate(arrayA, arrayB):
-    # your code here
-    return []
+    hasil = list(set(arrayB + arrayA))
+    result = sorted(hasil, key=lambda x: (arrayA + arrayB).index(x))
+    return result
 
 if __name__ == '__main__':
     # Test cases
